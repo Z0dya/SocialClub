@@ -1,0 +1,142 @@
+html,body
+{
+    height:100%; /*Чтобы по бокам не было отступов и просто выглядело добротно*/
+}
+body
+{
+
+    display: flex; /*Позволяет управлять блоками (в данном случае мы делаем Message и Footer(Иконки) в колонку*/ 
+    flex-direction: column; /*Выстраивание в колонку*/
+    margin: 0 auto;
+}
+main
+{
+    display:flex;
+    flex:1 0 auto; /*Иконки (Footer- нижняя часть экрана) прибивается к низу*/ 
+}
+.container
+{
+    min-width:420px;
+    width: 100%; 
+}
+.LeRi 
+{
+    display:flex;
+    flex-direction: row;
+}
+.navigationPK img
+{
+width: 40px;
+margin-left:3px;
+}
+.navigationPK
+{
+    display:flex;
+    flex-direction: column;
+    margin-right: 4px;
+    padding-top:4px;
+    background-color: #c3d8ff;
+}
+.navTXT
+{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.messagebox
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.message img
+{
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.message
+{
+    display:flex;
+    flex-direction:row; /*Теперь сообщения горизонтально (справа от картинок)*/
+    height: 100px;
+    align-items:center; /*Картинки по центру распологает */
+    background-color: #e4ebf8;
+    margin:3px;
+    padding-left:3px;
+}
+.txt p,h5
+{
+    margin:5px;
+}
+footer img
+{
+    width:30px;
+}
+
+.social
+{
+    display:none; /*Скрыли нижний блок(который юзается в телефоне)*/
+}
+
+@media (min-width:360px) and (max-width:420px) /*для телефоничка*/
+{
+    .navigationPK
+    {
+        display:none;
+    }
+    .container
+{
+    max-width:420px;
+    width: 100%;
+}
+main img
+{
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.message
+{
+    display:flex;
+    flex-direction:row; /*Теперь сообщения горизонтально (справа от картинок)*/
+    height: 100px;
+    align-items:center; /*Картинки по центру распологает */
+    margin:3px;
+    padding-left:3px;
+}
+.txt p,h5
+{
+    margin:5px;
+}
+.navTXT p
+{
+margin:0px;
+}
+footer img
+{
+    width:30px;
+}
+
+footer
+{
+    background-color: #c3d8ff;
+    border-top: 1px gray solid;
+    padding-top: 7px;
+}
+
+.social
+{
+    display:flex;
+    justify-content: space-between; /*Позволяет сделать растояние между блоками одинаковые (профиль серивисы) + SPACE BETWEEN (Корректит расстояние от углов автоматически) */
+}
+.navTXT
+{
+    margin:0px;
+}
+}
