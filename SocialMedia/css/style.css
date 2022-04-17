@@ -1,7 +1,100 @@
+/* импорт кастомного шрифта для названия сайта */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 html,body
 {
     height:100%; /*Чтобы по бокам не было отступов и просто выглядело добротно*/
 }
+
+.header{
+    transition:1s;
+}
+.HeadLine{
+    display: flex;
+    justify-content: space-between;
+    background-color: powderblue;
+
+}
+/* логотип и название сайта */
+.logohead{
+    display:flex;
+    flex-direction: row;
+    background-color:powderblue;
+    padding-left: 5px;
+}
+/* лого рупор */
+.ico{
+    width: 70px;
+    height: 70px;
+    }
+/* ВСети надпись */
+.logoname{
+        font-family: 'Oswald',sans-serif;
+        font-size: 25px;
+        padding-top: 15px;
+        margin: 0;
+        color: black;
+        text-decoration: none
+    }
+
+.searchbar{
+    min-width: 20%;
+    max-width: 25%;
+}    
+.search{
+    transition:1s;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 35px;
+    width: 70%;
+    padding: 2px 90px 2px 40px;
+    outline: 0;
+    background-color: #f5f5f5;
+}
+.searchico{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30px; 
+    margin-left: 10px;
+}
+/* ава,имя пользователя */
+.logohead2{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: powderblue;
+    padding-right: 50px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ава пользователя */
+.avausr{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+/* имя пользователя */
+.profiletxt{
+    padding-left: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* кнопка вызова меню пользователя */
+.navmenu{ 
+    width:  25px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+
 body
 {
 
@@ -9,7 +102,7 @@ body
     flex-direction: column; /*Выстраивание в колонку*/
     margin: 0 auto;
 }
-main
+main 
 {
     display:flex;
     flex:1 0 auto; /*Иконки (Footer- нижняя часть экрана) прибивается к низу*/ 
@@ -23,6 +116,7 @@ main
 {
     display:flex;
     flex-direction: row;
+    
 }
 .navigationPK img
 {
@@ -43,6 +137,7 @@ margin-left:3px;
     flex-direction: column;
     align-items:center;
     margin-bottom:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 .messagebox
@@ -68,6 +163,7 @@ margin-left:3px;
     background-color: #e4ebf8;
     margin:3px;
     padding-left:3px;
+    
 }
 .txt p,h5
 {
@@ -83,8 +179,40 @@ footer img
     display:none; /*Скрыли нижний блок(который юзается в телефоне)*/
 }
 
-@media (min-width:360px) and (max-width:420px) /*для телефоничка*/
+@media (min-width:360px) and (max-width:425px) /*для телефоничка*/
+
 {
+    .logohead2{
+        margin-right: -40px;
+    }
+    .logoname{
+        font-size: 22px;
+    }
+    .ico{
+        display: flex;
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .search{
+        margin-top: 20px;
+        height: 40%;
+        padding: 2px 20px 2px 35px;
+        margin-left: -10px;
+    }
+    }
+    .searchico{
+        margin-top: -5px;
+        margin-left: -5px;
+    }
+    .avausr{
+        height: 40px;
+        width: 40px;
+    }
+    .profiletxt{
+        font-family: 'Oswald',sans-serif;
+        font-size: 20px;
+    }
     .navigationPK
     {
         display:none;
