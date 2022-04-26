@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap%27');
+html,body
+{
+    height:100%; /*Чтобы по бокам не было отступов и просто выглядело добротно*/
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: powderblue;
+
+}
+header .navBar
+{
+    display: flex;
+    justify-content: space-between;
+}
+.logohead /*Лого + название сайта*/
+{
+    display:flex;
+    flex-direction: row;
+    background-color:powderblue;
+    padding-left: 5px;
+}
+.ico/*Лого (Рупор)*/
+{
+    width: 70px;
+    height: 70px;
+}
+.logoname /*В сети (надпись)*/
+{
+        font-family: 'Oswald',sans-serif;
+        font-size: 25px;
+        padding-top: 15px;
+        margin: 0;
+        color: black;
+        text-decoration: none
+    }
+
+.searchbar /*Поисковик+иконка (Регулировка длинны)*/
+{
+    min-width: 20%;
+    max-width: 25%;
+}
+.search /*Это сам поисковик*/
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 35px;
+    width: 70%;
+    padding: 2px 90px 2px 40px;
+    outline: 0; /*Жирность линии*/
+    background-color: #f5f5f5;
+}
+.searchico /*Икнока поисковика (Лупа)*/
+{
+    width: 20px;
+    height: 20px;
+    position: absolute; /*Позволяет вертеть лупой как хочешь (top 30 поменять на 50, лупа уедет вниз но останется также "по центру"*/
+    top: 30px; 
+    margin-left: 10px;
+}
+.logoheadSEC /*Ава, имя пользователя*/
+{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: powderblue;
+    padding-right: 50px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.avausr /*Ава пользователя*/
+{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.profiletxt /*Имя пользователя*/
+{
+    padding-left: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* .profilepage
+{
+    text-decoration: none;
+    color: #1b80c8;
+    
+} */
+body
+{
+
+    display: flex; /*Позволяет управлять блоками (в данном случае мы делаем Message и Footer(Иконки) в колонку*/ 
+    flex-direction: column; /*Выстраивание в колонку*/
+    margin: 0 auto;
+}
+main
+{
+    display:flex;
+    flex:1 0 auto; /*Иконки (Footer- нижняя часть экрана) прибивается к низу*/ 
+}
+.container
+{
+    min-width:360px;
+    width: 100%; 
+}
+.LeRi 
+{
+    display:flex;
+    flex-direction: row;
+}
+.navigationPK img
+{
+width: 40px;
+margin-left:3px;
+}
+.navigationPK
+{
+    display:flex;
+    flex-direction: column;
+    margin-right: 0px;
+    padding-top:4px;
+    background-color: #c3d8ff;
+}
+.navTXT 
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:15px ;
+    font-family: 'Oswald',sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #1b80c8;
+}
+.navTXT a
+{
+    text-decoration: none;
+    color: #1b80c8;
+}
+.messagebox
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.message img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    
+}
+.message
+{
+    display:flex;
+    flex-direction:row; /*Теперь сообщения горизонтально (справа от картинок)*/
+    height: 100px;
+    align-items:center; /*Картинки по центру распологает */
+    background-color: #e4ebf8;
+    margin:3px;
+    padding-left:3px;
+}
+.navTXT
+{
+    display:flex;
+    height:160px;
+}
+.txt p,h5
+{
+    margin:5px;
+}
+footer img
+{
+    width:30px;
+}
+.FootPK
+{
+    Border-top: 1px black solid;
+    background-color: #e4ebf8;
+}
+.FootPK h5
+{
+    margin-left:6px;
+    font-size:14px;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    margin-bottom: 0px;
+}
+.Supp img
+{
+    width:25px;
+    height:25px;
+    margin-right:5px;
+    margin-left:5px;
+}
+.Supp
+{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center; /*Переместил в центр картинки + текстыч (footer)*/
+}
+.Supp a 
+{
+    text-decoration:none; /*Весь это микроблок позволяет сделать ссылки черным цветом после нажатия*/
+    color:#1f636b;
+}
+
+.social
+{
+    display:none; /*Скрыли нижний блок(который юзается в телефоне)*/
+}
+
+@media (min-width:360px) and (max-width:420px) /*для телефоничка*/
+{
+.logoname
+{
+        font-size: 22px;
+}
+.ico
+{
+        display: flex;
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+}
+.search
+{
+        margin-top: 20px;
+        height: 40%;
+        padding: 2px 20px 2px 35px;
+        margin-left: -10px;
+}
+.searchico
+{
+        margin-top: -5px;
+        margin-left: -5px;
+}
+.avausr
+{
+        height: 40px;
+        width: 40px;
+}
+.profiletxt
+{
+        font-family: 'Oswald',sans-serif;
+        font-size: 20px;
+}
+.navigationPK
+{
+        display:none;
+}
+main img
+{
+    width:50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.message
+{
+    display:flex;
+    flex-direction:row; /*Теперь сообщения горизонтально (справа от картинок)*/
+    height: 100px;
+    align-items:center; /*Картинки по центру распологает */
+    margin:3px;
+    padding-left:3px;
+}
+.txt p,h5
+{
+    margin:5px;
+}
+.navTXT p
+{
+margin:0px;
+}
+footer img
+{
+    width:30px;
+}
+
+footer
+{
+    background-color: #c3d8ff;
+    border-top: 1px gray solid;
+    padding-top: 7px;
+}
+
+.social
+{
+    display:flex;
+    justify-content: space-between; /*Позволяет сделать растояние между блоками одинаковые (профиль серивисы) + SPACE BETWEEN (Корректит расстояние от углов автоматически) */
+    flex-wrap:wrap; /*Если элементам мало места и они выходят за границы он их переносит*/
+}
+.navTXT
+{
+    margin:0px;
+    height: auto;
+}
+.FootPK
+{
+    display: none;
+}
+}
