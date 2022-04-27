@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap%27');
+body {
+    background-color: #e4ebf8;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+.avaimage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    margin:  20px;
+}
+.content{
+    display: flex;
+}
+p{
+    margin: auto;
+}
+.profileinfo{
+    line-height:30px;
+    font-family: 'Oswald',sans-serif; ;
+    font-size: 20px;
+}

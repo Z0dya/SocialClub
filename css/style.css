@@ -113,6 +113,9 @@ main
     display:flex;
     flex-direction: row;
 }
+p{
+    margin: auto;
+}
 .navigationPK img
 {
 width: 40px;
@@ -141,6 +144,10 @@ margin-left:3px;
 {
     text-decoration: none;
     color: #1b80c8;
+}
+.navTXT a:hover
+{
+    color:#182fcd;
 }
 .messagebox
 {
